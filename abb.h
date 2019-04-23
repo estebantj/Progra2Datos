@@ -21,7 +21,7 @@ private:
 
 class abb{
 public:
-	abb(){raiz = nullptr};
+    abb(){raiz = nullptr;}
 private:
     pNodoPais raiz;
 };
