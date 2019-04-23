@@ -22,6 +22,8 @@ private:
 class abb{
 public:
     abb(){raiz = nullptr;}
+    void insertarPais();
+
 private:
     pNodoPais raiz;
 };
