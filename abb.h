@@ -10,7 +10,7 @@ using namespace std;
 
 class nodoPais{
 public:
-
+    nodoPais(int pCodPais, string pNombre);
 private:
 	int codPais;
 	string nombrePais;
