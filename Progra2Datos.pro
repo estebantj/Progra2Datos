@@ -5,7 +5,7 @@ CONFIG -= qt
 
 SOURCES += \
         main.cpp \
-    abb.cpp
+    abbPaises.cpp
 
 HEADERS += \
-    abb.h
+    abbPaises.h
