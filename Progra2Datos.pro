@@ -5,13 +5,15 @@ CONFIG -= qt
 
 SOURCES += \
         main.cpp \
-    abbPaises.cpp \
-    listastrings.cpp
+    listastrings.cpp \
+    paises.cpp \
+    trenes.cpp
     Paises.txt \
 
 HEADERS += \
-    abbPaises.h \
-    listastrings.h
+    listastrings.h \
+    paises.h \
+    trenes.h
 
 DISTFILES += \
     Administradores.txt \
