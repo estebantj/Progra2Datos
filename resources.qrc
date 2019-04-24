@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/Archivos">
+        <file>Administradores.txt</file>
+        <file>Ciudades.txt</file>
+        <file>Conexiones.txt</file>
+        <file>Paises.txt</file>
+        <file>Rutas.txt</file>
+        <file>Trenes.txt</file>
+        <file>Usuarios.txt</file>
+    </qresource>
+</RCC>

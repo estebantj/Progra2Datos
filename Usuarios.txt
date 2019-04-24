@@ -1,0 +1,26 @@
+12;90;4410;Jasmina Lambole;1
+90;89;1873;Ethelind Fillingham;1
+90;89;74;Thebault Gosker;0
+45;12;943;Elspeth Bothen;0
+24;26;722;Dacie Eglington;1
+20;689;9528;Archibaldo Kingdon;1
+69;122;191;Stillmann Lissimore;0
+45;12;045;Bendicty Chave;1
+89;76;634;Jefferey Cornier;1
+20;689;1806;Editha Sarsfield;1
+89;76;029;Ellary Dickings;1
+45;12;9409;Kizzie Bolle;0
+89;76;0471;Richie Gower;1
+24;26;938;Lorelle Marvelley;0
+89;76;027;Gordie Ebbing;0
+20;689;70;Bridget Habbin;0
+89;76;658;Hunter Carley;1
+45;12;180;Ross Fagence;1
+69;245;72;Gibbie Goch;1
+20;689;787;Gayleen Seals;1
+02;963;0059;Henriette Cheverell;1
+24;26;400;Aggi Matresse;1
+12;90;019;Germayne Tennewell;0
+24;26;816;Stuart Hapgood;1
+12;90;282;Candide MacCague;0
+

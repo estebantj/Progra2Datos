@@ -5,7 +5,22 @@ CONFIG -= qt
 
 SOURCES += \
         main.cpp \
-    abbPaises.cpp
+    abbPaises.cpp \
+    listastrings.cpp
+    Paises.txt \
 
 HEADERS += \
-    abbPaises.h
+    abbPaises.h \
+    listastrings.h
+
+DISTFILES += \
+    Administradores.txt \
+    Ciudades.txt \
+    Conexiones.txt \
+    Paises.txt \
+    Rutas.txt \
+    Trenes.txt \
+    Usuarios.txt
+
+RESOURCES += \
+    resources.qrc
