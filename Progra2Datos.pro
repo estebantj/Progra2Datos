@@ -4,6 +4,7 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
+    administradores.cpp \
         main.cpp \
     listastrings.cpp \
     paises.cpp \
@@ -11,6 +12,7 @@ SOURCES += \
     Paises.txt \
 
 HEADERS += \
+    administradores.h \
     listastrings.h \
     paises.h \
     trenes.h

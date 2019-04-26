@@ -114,7 +114,6 @@ void Paises::insertarPais(int pCodPais, string pNombre, pNodoPais R) {
             insertarPais(pCodPais, pNombre, R->Hder);
         }
     }
-
 }
 
 void preOrdenPaises(pNodoPais R) {
@@ -311,6 +310,16 @@ bool Paises::existeConexion(int pCodPaisSalida, int pCodCiudadSalida, int pCodCo
     else
         return false;
 }
+
+bool Paises::existeConexion(int pCodPaisSalida, int pCodCiudadSalida, int pCodPaisDestino, int pCodCiudadDestino){
+    pNodoCiudad ciudad = obtenerNodoCiudad(pCodPaisSalida, pCodCiudadSalida);
+    bool encontrado = false;
+    if (ciudad != nullptr && ciudad->conexiones != nullptr) {
+        existeConexion(pCodPaisDestino, pCodCiudadDestino, encontrado, ciudad->conexiones);
+        return encontrado;
+    }else
+        return false;
+}
 // ##########################################################################################
 
 int Paises::getColor(pNodoConexion &node) {
@@ -460,6 +469,18 @@ bool Paises::existeConexion(int pCodConexion, pNodoConexion node)
             return false;
     } else
         return false;
+}
+
+void Paises::existeConexion(int pCodPaisDestino, int pCodCiudadDestino, bool &encontrado,pNodoConexion node) {
+    if (node == nullptr) {
+        return;
+    } else if (node->codPaisDestino == pCodPaisDestino && node->codCiudadDestino == pCodCiudadDestino){
+        encontrado = true;
+        return;
+    } else if (!encontrado){
+        existeConexion(pCodPaisDestino, pCodCiudadDestino, encontrado, node->Hizq);
+        existeConexion(pCodPaisDestino, pCodCiudadDestino, encontrado, node->Hder);
+    }
 }
 
 

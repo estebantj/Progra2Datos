@@ -72,11 +72,12 @@ private:
 
     pNodoPais obtenerNodoPais(pNodoPais R, int pCodPais);
 
-    pNodoCiudad insertarCiudad(int pCodPais, int pCodCiudad, string pNombre, pNodoCiudad t);
 
     void inOrdenPaises(pNodoPais R);
 
     // Metodos del arbol avl de ciudades
+    pNodoCiudad insertarCiudad(int pCodPais, int pCodCiudad, string pNombre, pNodoCiudad t);
+
     pNodoCiudad rotacionSimpleDerechaAVL(pNodoCiudad &t);
 
 
@@ -123,6 +124,8 @@ private:
 
     bool existeConexion(int pCodConexion, pNodoConexion node);
 
+    void existeConexion(int pCodPaisDestino, int pCodCiudadDestino,bool &encontrado, pNodoConexion node);
+
     pNodoConexion insertarConexion(pNodoConexion &R, pNodoConexion &nodo);
 
 public:
@@ -150,6 +153,8 @@ public:
     // Metodos del arbol de conexiones
 
     bool existeConexion(int pCodPaisSalida, int pCodCiudadSalida, int pCodConexion);
+
+    bool existeConexion(int pCodPaisSalida, int pCodCiudadSalida, int pCodPaisDestino, int pCodCiudadDestino);
 
     void insertarConexion(int pCodPaisSalida, int pCodCiudadSalida, int pCodConexion, int pCodPaisDestino, int pCodCiudadDestino, int pTiempo, int pPrecio);
 
